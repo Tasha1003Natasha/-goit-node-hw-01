@@ -3,7 +3,6 @@ const path = require("path");
 
 const contactsPath = path.resolve(__dirname, "./contacts.json");
 
-// TODO: задокументувати кожну функцію
 async function listContacts() {
   try {
     const data = await fs.readFile(contactsPath, "utf8");
@@ -38,8 +37,6 @@ async function removeContact(contactId) {
       JSON.stringify(listContacts),
       "utf8"
     );
-
-    console.table(removeContact);
   } catch (error) {
     console.error(`Got an error trying to delete the file: ${error}`);
   }
@@ -65,7 +62,6 @@ async function addContact(name, email, phone) {
       JSON.stringify(listContacts),
       "utf8"
     );
-    console.table(addContact);
   } catch (error) {
     console.error(`Got an error trying to write to a file: ${error}`);
   }
