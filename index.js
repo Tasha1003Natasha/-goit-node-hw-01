@@ -3,5 +3,5 @@ const contacts = require("./db/contacts");
 
 // contacts.listContacts("list");
 // contacts.getContactById("2");
-// contacts.removeContact("1");
-contacts.addContact("Nina", "nina@ukr.net", "(295) 841-6786");
+// contacts.removeContact("12");
+// contacts.addContact("Nina", "nina@ukr.net", "(295) 841-6786");
